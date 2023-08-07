@@ -4,7 +4,7 @@ import numpy as np
 cap = cv.VideoCapture(1)
 
 fourcc = cv.VideoWriter.fourcc(*'mp4v')
-out = cv.VideoWriter('videos/output.mp4',fourcc,20.0,(640,480))
+out = cv.VideoWriter('videos/output.mp4',fourcc,30.0,(640,480))
 
 while cap.isOpened():
     ret,frame = cap.read()
